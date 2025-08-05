@@ -11,5 +11,10 @@
   "devDependencies": {
     "sass": "^1.89.2",
     "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "svgo": "^4.0.0"
   }
 }
