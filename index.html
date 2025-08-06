@@ -3,11 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+     <header class="header">
+      <nav class="nav container">
+        <a href="#" class="logo">
+          <img src="src/assets/icons/gathsession.svg" alt="Logotipo Gath Session">
+        </a>
+        <ul class="nav__links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main container">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Build your best community starting from here.</h1>
+          <p class="hero__subtitle">
+            Meet and communicate with the best people to run projects, events or other activities 
+            in a more effective and fun way
+          </p>
+          <div class="hero__buttons">
+            <a href="#" class="btn btn--primary">Get Started</a>
+            <a href="#" class="btn btn--link">
+              Learn More
+              <img class="icon" src="src/assets/icons/arrow.svg" alt="Learn more">
+            </a>
+            
+          </div>
+          <div class="hero__features">
+            <div class="feature">
+              <img src="src/assets/icons/icon.svg" alt="Build Community">
+              <span>Build Community</span>
+            </div>
+            <div class="feature">
+              <img src="src/assets/icons/icon-1.svg" alt="Share Events">
+              <span>Share Events</span>
+            </div>
+            <div class="feature">
+              <img src="src/assets/icons/icon-2.svg" alt="Get Information">
+              <span>Get Information</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image">
+          <img src="src/assets/images/content.png" alt="Persons hero image">
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
