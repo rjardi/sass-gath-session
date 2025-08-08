@@ -1,3 +1,11 @@
+# Gath Session Landing Page
+
+https://rjardi.github.io/sass-gath-session/
+
+A modern, responsive landing page for a communities business. Built with semantic HTML and modular SASS.
+
+<img src="src/assets/images/snapshot.png">
+
 # 🖼 Importador de Assets desde Figma (Funcionalidad interna)
 
 Este script (`import-figma-assets.js`) permite **extraer automáticamente assets (SVG, PNG, JPG)** desde un archivo de Figma usando la API oficial.  

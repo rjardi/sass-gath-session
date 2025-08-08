@@ -23,11 +23,13 @@ body {
   font-family: $font-main;
   background: $bg-color;
   color: $text-color;
+  background-image: url("/src/assets/images/elipses.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -35,16 +37,19 @@ body {
 // Header
 // =====================
 .header {
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
 
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 7rem;
+    font-size: 1.1rem;
+    font-weight: 300;
 
     .nav__links {
       display: flex;
-      gap: 2rem;
+      gap: 3.2rem;
       list-style: none;
 
       a {
@@ -83,7 +88,7 @@ body {
 // =====================
 .hero {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   padding: 4rem 0;
   gap: 3rem;
@@ -92,31 +97,34 @@ body {
     flex: 1;
 
     .hero__title {
+      margin-top: 2rem;
       font-family: $font-heading;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 1rem;
-      line-height: 1.2;
-      font-size: 4rem;
+      max-width: 90%;
+      font-size: 5rem;
     }
 
     .hero__subtitle {
       color: $text-secondary;
       margin-bottom: 2rem;
-      line-height: 2rem;
-      max-width: 450px;
-      font-size: 1.15rem;
+      line-height: 2.5rem;
+      max-width: 80%;
+      font-size: 1.4rem;
       font-style: normal;
+      font-weight: 300;
     }
 
     .hero__buttons {
       display: flex;
-      gap: 1.5rem;
+      // gap: 1rem;
       margin-bottom: 3rem;
+      font-size: 1.1rem;
 
       .btn {
-        padding: 0.3rem 2.5rem;
-        border-radius: 6px;
-        font-weight: 500;
+        padding: 1rem 4.5rem;
+        border-radius: 1rem 1rem 1rem 0;
+        font-weight: 300;
         text-decoration: none;
         transition: background 0.3s ease;
         display: inline-flex;
@@ -134,15 +142,15 @@ body {
         &--link {
           color: $text-color;
           text-decoration: underline;
-          font-weight: 100;
+          font-weight: 500;
 
           &:hover {
             color: color.scale($text-color, $lightness: 20%);
           }
 
           .icon {
-            width: 1.5rem;
-            height: 1.5rem;
+            width: 2rem;
+            height: 2rem;
             margin-left: 10px;
           }
 
@@ -151,21 +159,18 @@ body {
     }
 
     .hero__features {
+      margin-top: 9rem; 
       display: flex;
-      gap: 2.3rem;
-      max-width: 500px;
+      gap: 2rem;
+      max-width: 80%;
+      font-size: 1.1rem;
+      font-weight: 600;
 
       .feature {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
-        font-size: 0.9rem;
-        // color: $text-secondary;
+        gap: 1rem;
 
-        img {
-          width: 2.6rem;
-          height: 2.6rem;
-        }
       }
     }
   }
